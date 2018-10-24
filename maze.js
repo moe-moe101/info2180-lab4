@@ -23,8 +23,8 @@ function allBounds(){
 	var ending = document.getElementById("end");
 	ending.onmouseover = endMaze;
 	
-	/*var restart =document.getElementById("start");
-	restart.onclick = refresh;*/
+	var restart =document.getElementById("start");
+	restart.onclick = refresh;
 	
 	var bounds = document.querySelectorAll(".boundary");
 	//size = bounds.length;
@@ -52,4 +52,9 @@ function endMaze(){
 }
 
 //Ex 4
-
+function refresh(){
+	var bounds = document.querySelectorAll(".boundary");
+	for(let i=0; i<bounds.length;i++){
+		bounds[i].classList.remove("youlose");
+	}
+}
