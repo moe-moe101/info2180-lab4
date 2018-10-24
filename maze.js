@@ -20,6 +20,12 @@
 //var i;
 
 function allBounds(){
+	var ending = document.getElementById("end");
+	ending.onmouseover = endMaze;
+	
+	/*var restart =document.getElementById("start");
+	restart.onclick = refresh;*/
+	
 	var bounds = document.querySelectorAll(".boundary");
 	//size = bounds.length;
 	for(let i=0; i<bounds.length;i++){
@@ -34,3 +40,16 @@ function turnRed(){
 			bounds[i].classList.add("youlose");
 		}
 }
+
+//Ex3
+function endMaze(){
+	if(touch){
+		alert("You Loose. Try again");
+	}
+	if(!touch){
+		alert("Congrats you win");
+	}
+}
+
+//Ex 4
+
