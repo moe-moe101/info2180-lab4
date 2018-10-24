@@ -1,4 +1,6 @@
-//Lab4 Done by Moesha Amos
+//Lab4 
+//Done by Moesha Amos
+//Oct. 24,2018
 
 	
 	//Ex 1
