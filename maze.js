@@ -44,10 +44,14 @@ function turnRed(){
 //Ex3
 function endMaze(){
 	if(touch){
-		alert("You Loose. Try again");
+		//alert("You Loose. Try again");
+		var heading = document.getElementById("status");
+		heading.textContent = "Sorry You Loose.Move your mouse over the "S" to begin."
 	}
 	if(!touch){
-		alert("Congrats you win");
+		//alert("Congrats you win");
+		var heading = document.getElementById("status");
+		heading.textContent = "Congrats you win.Move your mouse over the "S" to begin."
 	}
 }
 
